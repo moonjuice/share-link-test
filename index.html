@@ -21,5 +21,21 @@
         <li><a href="http://www.facebook.com/share.php?u=https%3A%2F%2Fw3schools.com%2Fmy%20test.asp%3Fname%3Dst%C3%A5le%26car%3Dsaab">http -> www.facebook.com:share.php</a></li>
         <li><a href="http://www.facebook.com/sharer.php?u=https://moonjuice.github.io/share-link-test/">http -> www.facebook.com:sharer.php</a></li>
     </ul>
+    
+      <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your share button code -->
+  <div class="fb-share-button" 
+    data-href="https://moonjuice.github.io/share-link-test/" 
+    data-layout="button_count">
+  </div>
 </body>
 </html>
